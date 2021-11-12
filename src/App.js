@@ -7,7 +7,7 @@ import Articles from "./components/Article/Articles";
 const useStyle = makeStyles({
   container: {
     marginTop: "110px",
-    width: "60%",
+    width: "67%",
     margin: "0 auto",
   },
 });

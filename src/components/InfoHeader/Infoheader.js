@@ -1,12 +1,16 @@
 import { Box, makeStyles, Typography } from "@material-ui/core";
 
-const useStyle = makeStyles({
+const useStyle = makeStyles((theme) => ({
   container: {
     background: "#f44336",
     color: "#fff",
     height: "48px",
     display: "flex",
     alignItems: "center",
+    marginBottom: "30px",
+    [theme.breakpoints.down("md")]: {
+      display: "none",
+    },
   },
   text: {
     fontSize: 14,
@@ -19,7 +23,7 @@ const useStyle = makeStyles({
       margin: "0 50px 0 20px",
     },
   },
-});
+}));
 
 const InfoHeader = () => {
   const classes = useStyle();
